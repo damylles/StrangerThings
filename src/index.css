@@ -1,13 +1,264 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  background-color: #f5f2ee;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #b05a7a;
+  font-size: 1.125rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a.link {
+  color: black;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.container {
+  width: 1024px;
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #b05a7a;
+}
+
+main {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.main2 {
+  min-height: 300px;
+  padding-top: 50px;
+}
+
+.search-box {
+  height: 30px;
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #b05a79a4;
+  border-radius: 30px;
+  align-items: center;
+  box-shadow: 0 10px 25px rgb(0, 0, 0, 0.3);
+}
+
+.search-box:hover input {
+  width: 300px;
+}
+
+.search-box input {
+  width: 0;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+}
+
+.search-box a .search-btn {
+  color: #bf95a4;
+  font-size: 18px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card1 {
+  min-height: 250px;
+  width: 30%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+  background-color: #84d2c5;
+}
+
+.card2 {
+  width: 30%;
+  min-height: 250px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+  background-color: #c27664;
+}
+
+.card3 {
+  width: 30%;
+  min-height: 250px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+  background-color: #e4c988;
+}
+
+.card1,
+.card2,
+.card3 {
+  padding: 30px 30px 20px 30px;
+  box-sizing: border-box;
+}
+
+.herobox1 {
+  flex: 2;
+  padding-right: 100px;
+}
+
+.herobox2 {
+  flex: 1;
+}
+
+h1 {
+  font-size: 3.25rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.228);
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  margin-top: 20px;
+}
+
+p {
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.cards p {
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+  margin-top: 10px;
+}
+
+.cards i {
+  font-size: 100px;
+}
+
+.mybutton {
+  background-color: white;
+  color: #b05a7a;
+  font-family: 'Playfair Display', serif;
+  padding: 11px 25px;
+  border-radius: 2px;
+  margin-right: 10px;
+  box-shadow: 0px 2px 2px #b05a7a;
+}
+
+.createaccount {
+  background-color: unset;
+  color: #000;
+  font-family: 'Playfair Display', serif;
+  padding: 11px 25px;
+  border-radius: 0px;
+  margin-right: 10px;
+  box-shadow: 0px 0px 0px #000;
+}
+
+.mybutton:hover {
+  background-color: #e4c988;
+  transition-duration: 1s;
+}
+
+a.mybutton {
+  display: inline-block;
+  margin-top: 1 0px;
+}
+
+nav a.mybutton {
+  margin-left: 30px;
+}
+
+.navbutton {
+  padding: 11px 25px;
+  margin-left: 5px;
+  font-family: 'Playfair Display', serif;
+  display: inline-block;
+  position: relative;
+  background-color: #b05a7a;
+}
+
+.colors-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.tbox {
+  width: 47%;
+  padding: 50px;
+  border: 1px solid #b05a7a;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+/* .tbox p:last-of-type {
+  font-size: 0.8rem;
+  padding-left: 30px;
+} */
+
+.dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.navbutton:hover .dropdown {
+  display: block;
+}
+
+.dropdown .navbutton {
+  width: 120px;
+  background-color: rgb(124, 124, 124);
+}
+
+.dropdown .navbutton a {
+  color: #cca7b5;
+}
+
+.inputwrapper {
+  margin-bottom: 30px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+textarea {
+  padding: 12px 20px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.newline {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.margin-right-a {
+  margin-right: 20px;
+}
+
+/* input[type='radio'] {
+  margin-right: 10px;
+} */
+
+form {
+  margin: 40px 0px;
 }
